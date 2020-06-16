@@ -19,8 +19,8 @@ $(document).ready(function() {
   });
   $("input[type=radio]").change(function() {
     var fd = new FormData();
-    var this = $(this);
-    fd.append(this.attr("name"), this.val());
+    var target = $(this);
+    fd.append(target.attr("name"), target.val());
     $.ajax({
       url: 'form_update.php',
       type: 'get',
@@ -38,11 +38,11 @@ $(document).ready(function() {
   });
   $("input[type=checkbox]").change(function() {
     var fd = new FormData();
-    var this = $(this);
-    if (this.is(":checked")) {
-      fd.append(this.attr("name"), "true");
+    var target = $(this);
+    if (target.is(":checked")) {
+      fd.append(target.attr("name"), "true");
     } else {
-      fd.append(this.attr("name"), "false");
+      fd.append(target.attr("name"), "false");
     }
     $.ajax({
       url: 'form_update.php',
