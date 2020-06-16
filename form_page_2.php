@@ -16,11 +16,11 @@
       <form action="form_page_3.php" medthod="GET">
         <div class="inside-block">
             <h2>Have a bad cough or stuffy nose, runny nose, tired breathing and inhale?</h2>
-            <h2><input type="radio" name="haveCough" value="YES" <?php echo ($_SESSION['haveCough'] == "YES")? "checked":""; ?>>YES</h2>
-            <h2><input type="radio" name="haveCough" value="NO"<?php echo ($_SESSION['haveCough'] == "NO")? "checked":""; ?>>NO</h2>
+            <h2><input type="radio" name="haveCough" value="YES" <?php echo ($_SESSION['haveCough'] == "YES")? "checked":""; ?> required>YES</h2>
+            <h2><input type="radio" name="haveCough" value="NO"<?php echo ($_SESSION['haveCough'] == "NO")? "checked":""; ?> required>NO</h2>
             <h2>Do you feel fever or measure body temperature over 37.5 *C?</h2>
-            <h2><input type="radio" name="haveFever" value="YES" <?php echo ($_SESSION['haveFever'] == "YES")? "checked":""; ?>>YES</h2>
-            <h2><input type="radio" name="haveFever" value="NO" <?php echo ($_SESSION['haveFever'] == "NO")? "checked":""; ?>>NO</h2>
+            <h2><input type="radio" name="haveFever" value="YES" <?php echo ($_SESSION['haveFever'] == "YES")? "checked":""; ?> required>YES</h2>
+            <h2><input type="radio" name="haveFever" value="NO" <?php echo ($_SESSION['haveFever'] == "NO")? "checked":""; ?> required>NO</h2>
         </div>
         <div class="button-block">
             <h2>
