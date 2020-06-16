@@ -20,7 +20,7 @@ body{
 .inside-block h2{
     margin-top: 2%;
 }
-.button-block input[type=submit]{
+.button-block input{
     margin-top: 2%;
     font-family: monospace;
     font-size: 75%;
