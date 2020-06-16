@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background-image: url(bg.png);
+    background-size: 1920px 1080px;
+    background-repeat: no-repeat;
+}
+.outlet-block {
+    color : white;
+    margin: 5% 35% 0% 10%;
+}
+.outlet-block h1{
+    font-size: 350%;
+}
+.inside-block{
+    margin-left: 2%;
+    margin-top: 4%;
+}
+.inside-block h2{
+    margin-top: 2%;
+}
+.button-block input[type=submit]{
+    margin-top: 2%;
+    font-family: monospace;
+    font-size: 75%;
+    color: white;
+    border: #21D9BD solid 2px;
+    background: #21D9BD;
+    border-radius: 10%;
+    padding: 0.25% 2% 0.25% 2%;
+}
