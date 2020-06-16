@@ -27,7 +27,7 @@
             <h2><input type="checkbox" name="isDyslipidemia" <?php echo ($_SESSION['isDyslipidemia'] == "true")? "checked":""; ?> required>  Dyslipidemia</h2>
             <h2><input type="checkbox" name="isHearth" <?php echo ($_SESSION['isHearth'] == "true")? "checked":""; ?> required>  Hearth disease</h2>
             <h2><input type="checkbox" name="isRenopathy" <?php echo ($_SESSION['isRenopathy'] == "true")? "checked":""; ?> required>  Renopathy</h2>
-            <h2><input type="checkbox" name="isPneumonopathy" <?php (echo $_SESSION['isPneumonopathy'] == "true")? "checked":""; ?> required>  Pneumonopathy</h2>
+            <h2><input type="checkbox" name="isPneumonopathy" <?php echo ($_SESSION['isPneumonopathy'] == "true")? "checked":""; ?> required>  Pneumonopathy</h2>
           </div>
         </div>
         <div class="button-block">
