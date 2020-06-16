@@ -1,45 +1,45 @@
 <?php
-if (isset($_GET['firstName'])) {
-  $_SESSION['firstName'] = $_GET['firstName'];
+if (isset($_REQUEST['firstName'])) {
+  $_SESSION['firstName'] = $_REQUEST['firstName'];
 }
-if (isset($_GET['lastName'])) {
-  $_SESSION['lastName'] = $_GET['lastName'];
+if (isset($_REQUEST['lastName'])) {
+  $_SESSION['lastName'] = $_REQUEST['lastName'];
 }
-if (isset($_GET['age'])) {
-  $_SESSION['age'] = $_GET['age'];
+if (isset($_REQUEST['age'])) {
+  $_SESSION['age'] = $_REQUEST['age'];
 }
-if (isset($_GET['gender'])) {
-  $_SESSION['gender'] = $_GET['gender'];
+if (isset($_REQUEST['gender'])) {
+  $_SESSION['gender'] = $_REQUEST['gender'];
 }
-if (isset($_GET['noDisease'])) {
-  $_SESSION['noDisease'] = $_GET['noDisease'];
+if (isset($_REQUEST['noDisease'])) {
+  $_SESSION['noDisease'] = $_REQUEST['noDisease'];
 }
-if (isset($_GET['isHypertension'])) {
-  $_SESSION['isHypertension'] = $_GET['isHypertension'];
+if (isset($_REQUEST['isHypertension'])) {
+  $_SESSION['isHypertension'] = $_REQUEST['isHypertension'];
 }
-if (isset($_GET['isDiabets'])) {
-  $_SESSION['isDiabets'] = $_GET['isDiabets'];
+if (isset($_REQUEST['isDiabets'])) {
+  $_SESSION['isDiabets'] = $_REQUEST['isDiabets'];
 }
-if (isset($_GET['isDyslipidemia'])) {
-  $_SESSION['isDyslipidemia'] = $_GET['isDyslipidemia'];
+if (isset($_REQUEST['isDyslipidemia'])) {
+  $_SESSION['isDyslipidemia'] = $_REQUEST['isDyslipidemia'];
 }
-if (isset($_GET['isHearth'])) {
-  $_SESSION['isHearth'] = $_GET['isHearth'];
+if (isset($_REQUEST['isHearth'])) {
+  $_SESSION['isHearth'] = $_REQUEST['isHearth'];
 }
-if (isset($_GET['isRenopathy'])) {
-  $_SESSION['isRenopathy'] = $_GET['isRenopathy'];
+if (isset($_REQUEST['isRenopathy'])) {
+  $_SESSION['isRenopathy'] = $_REQUEST['isRenopathy'];
 }
-if (isset($_GET['isPneumonopathy'])) {
-  $_SESSION['isPneumonopathy'] = $_GET['isPneumonopathy'];
+if (isset($_REQUEST['isPneumonopathy'])) {
+  $_SESSION['isPneumonopathy'] = $_REQUEST['isPneumonopathy'];
 }
-if (isset($_GET['haveCough'])) {
-  $_SESSION['haveCough'] = $_GET['haveCough'];
+if (isset($_REQUEST['haveCough'])) {
+  $_SESSION['haveCough'] = $_REQUEST['haveCough'];
 }
-if (isset($_GET['haveFever'])) {
-  $_SESSION['haveFever'] = $_GET['haveFever'];
+if (isset($_REQUEST['haveFever'])) {
+  $_SESSION['haveFever'] = $_REQUEST['haveFever'];
 }
-if (isset($_GET['history'])) {
-  $_SESSION['history'] = $_GET['history'];
+if (isset($_REQUEST['history'])) {
+  $_SESSION['history'] = $_REQUEST['history'];
 }
 echo "done";
 ?>

@@ -17,17 +17,17 @@
         <div class="inside-block">
           <h2>First Name : <input type="text" name="firstName" value="<?php echo $_SESSION['firstName']; ?>" required></h2>
           <h2>Last Name : <input type="text" name="lastName" style="margin-left: 1%;" value="<?php echo $_SESSION['lastName']; ?>" required></h2>
-          <h2>Gender <input type="radio" name="gender" checked="<?php echo $_SESSION['gender'] == 'male'; ?>" value="male" required> Male <input type="radio" name="gender" checked="<?php echo $_SESSION['gender'] == 'female'; ?>" value="female" required> Female</h2>
+          <h2>Gender <input type="radio" name="gender" <?php echo ($_SESSION['gender'] == 'male')? "checked":""; ?> value="male" required> Male <input type="radio" name="gender" <?php echo ($_SESSION['gender'] == 'female')? "checked":""; ?> value="female" required> Female</h2>
           <h2>Age <input type="number" name="age" min="1" max="120" value="<?php echo $_SESSION['age']; ?>" required></h2>
           <h2>Congenital Disease</h2>
           <div style="margin-left: 5%;">
-            <h2><input type="checkbox" name="noDisease" <?php echo ($_SESSION['noDisease'] == "true")? "checked":""; ?> required>  No disease</h2>
-            <h2><input type="checkbox" name="isHypertension" <?php echo ($_SESSION['isHypertension'] == "true")? "checked":""; ?> required>  Hypertension</h2>
-            <h2><input type="checkbox" name="isDiabets" <?php echo ($_SESSION['isDiabets'] == "true")? "checked":""; ?> required>  Diabets</h2>
-            <h2><input type="checkbox" name="isDyslipidemia" <?php echo ($_SESSION['isDyslipidemia'] == "true")? "checked":""; ?> required>  Dyslipidemia</h2>
-            <h2><input type="checkbox" name="isHearth" <?php echo ($_SESSION['isHearth'] == "true")? "checked":""; ?> required>  Hearth disease</h2>
-            <h2><input type="checkbox" name="isRenopathy" <?php echo ($_SESSION['isRenopathy'] == "true")? "checked":""; ?> required>  Renopathy</h2>
-            <h2><input type="checkbox" name="isPneumonopathy" <?php echo ($_SESSION['isPneumonopathy'] == "true")? "checked":""; ?> required>  Pneumonopathy</h2>
+            <h2><input type="checkbox" name="noDisease" <?php echo ($_SESSION['noDisease'] == "true")? "checked":""; ?>>  No disease</h2>
+            <h2><input type="checkbox" name="isHypertension" <?php echo ($_SESSION['isHypertension'] == "true")? "checked":""; ?>>  Hypertension</h2>
+            <h2><input type="checkbox" name="isDiabets" <?php echo ($_SESSION['isDiabets'] == "true")? "checked":""; ?>>  Diabets</h2>
+            <h2><input type="checkbox" name="isDyslipidemia" <?php echo ($_SESSION['isDyslipidemia'] == "true")? "checked":""; ?>>  Dyslipidemia</h2>
+            <h2><input type="checkbox" name="isHearth" <?php echo ($_SESSION['isHearth'] == "true")? "checked":""; ?>>  Hearth disease</h2>
+            <h2><input type="checkbox" name="isRenopathy" <?php echo ($_SESSION['isRenopathy'] == "true")? "checked":""; ?>>  Renopathy</h2>
+            <h2><input type="checkbox" name="isPneumonopathy" <?php echo ($_SESSION['isPneumonopathy'] == "true")? "checked":""; ?>>  Pneumonopathy</h2>
           </div>
         </div>
         <div class="button-block">

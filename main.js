@@ -4,7 +4,7 @@ $(document).ready(function() {
     fd.append($(this).attr("name"), $(this).val());
     $.ajax({
       url: 'form_update.php',
-      type: 'get',
+      type: 'post',
       data: fd,
       contentType: false,
       processData: false,
@@ -23,7 +23,7 @@ $(document).ready(function() {
     fd.append(target.attr("name"), target.val());
     $.ajax({
       url: 'form_update.php',
-      type: 'get',
+      type: 'post',
       data: fd,
       contentType: false,
       processData: false,
@@ -46,7 +46,7 @@ $(document).ready(function() {
     }
     $.ajax({
       url: 'form_update.php',
-      type: 'get',
+      type: 'post',
       data: fd,
       contentType: false,
       processData: false,
