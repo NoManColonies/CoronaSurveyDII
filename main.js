@@ -59,4 +59,23 @@ $(document).ready(function() {
       },
     });
   });
+  $("input[type=number]").change(function() {
+    var fd = new FormData();
+    var target = $(this);
+    fd.append(target.attr("name"), target.val());
+    $.ajax({
+      url: 'form_update.php',
+      type: 'post',
+      data: fd,
+      contentType: false,
+      processData: false,
+      success: function(response) {
+        if (response == "done") {
+          console.log("saved");
+        } else {
+          console.log("saving failed");
+        }
+      },
+    });
+  });
 });
