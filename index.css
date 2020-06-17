@@ -30,3 +30,13 @@ body{
     border-radius: 10%;
     padding: 0.25% 2% 0.25% 2%;
 }
+.button-block button{
+    margin-top: 2%;
+    font-family: monospace;
+    font-size: 75%;
+    color: white;
+    border: #21D9BD solid 2px;
+    background: #21D9BD;
+    border-radius: 10%;
+    padding: 0.25% 2% 0.25% 2%;
+}

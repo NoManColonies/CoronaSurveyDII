@@ -17,7 +17,7 @@
         <div class="inside-block">
           <h2>First Name : <input type="text" name="firstName" value="<?php echo $_SESSION['firstName']; ?>" required></h2>
           <h2>Last Name : <input type="text" name="lastName" style="margin-left: 1%;" value="<?php echo $_SESSION['lastName']; ?>" required></h2>
-          <h2>Gender <input type="radio" name="gender" <?php echo ($_SESSION['gender'] == 'male')? "checked":""; ?> value="male" required> Male <input type="radio" name="gender" <?php echo ($_SESSION['gender'] == 'female')? "checked":""; ?> value="female" required> Female</h2>
+          <h2>Gender <input type="radio" name="gender" <?php echo ($_SESSION['gender'] == "male")? "checked":""; ?> value="male" required> Male <input type="radio" name="gender" <?php echo ($_SESSION['gender'] == "female")? "checked":""; ?> value="female" required> Female</h2>
           <h2>Age <input type="number" name="age" min="1" max="120" value="<?php echo $_SESSION['age']; ?>" required></h2>
           <h2>Congenital Disease</h2>
           <div style="margin-left: 5%;">
