@@ -16,6 +16,8 @@
       <form action="form_result.php" medthod="GET">
         <div class="inside-block">
           <h2>Within these 14 days, has the following history?</h2>
+          <input type="hidden" name="haveCough" value="<?php echo $_GET['haveCough']; ?>">
+          <input type="hidden" name="haveFever" value="<?php echo $_GET['haveFever']; ?>">
           <h2><input type="radio" name="history" value="infection" <?php echo ($_SESSION['history'] == "infection")? "checked":""; ?> required> You have been in close contact with who confirmed that infected by Covid-19 virus</h2>
           <h2><input type="radio" name="history" value="outbreak" <?php echo ($_SESSION['history'] == "outbreak")? "checked":""; ?> required> You have close contact with tourists that comes from countries with outbreaks</h2>
           <h2><input type="radio" name="history" value="traveling" <?php echo ($_SESSION['history'] == "traveling")? "checked":""; ?> required> You lived with a close person that have traveling from an outbreak country</h2>
