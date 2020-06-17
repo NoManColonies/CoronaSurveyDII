@@ -13,7 +13,7 @@
     <div class="outlet-block">
       <h1>COVID-19</h1>
       <h2>This screening form Is a risk assessment <br>Respiratory infections from the COVID-19 virus</h2>
-      <form action="form_page_3.php" medthod="GET">
+      <form action="form_page_3.php" medthod="post">
         <div class="inside-block">
             <h2>Have a bad cough or stuffy nose, runny nose, tired breathing and inhale?</h2>
             <h2><input type="radio" name="haveCough" value="YES" <?php echo ($_SESSION['haveCough'] == "YES")? "checked":""; ?> required>YES</h2>
@@ -23,12 +23,12 @@
             <h2><input type="radio" name="haveFever" value="NO" <?php echo ($_SESSION['haveFever'] == "NO")? "checked":""; ?> required>NO</h2>
         </div>
         <div class="button-block">
-            <h2>
-              <div class="">
-                <a href="index.php">Back</a>
-              </div>
-              <input type="submit" name="next" value="Next">
-            </h2>
+          <h2>
+            <div class="">
+              <a href="index.php">Back</a>
+            </div>
+            <input type="submit" name="next" value="Next">
+          </h2>
         </div>
       </form>
     </div>

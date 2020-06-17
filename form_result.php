@@ -13,7 +13,7 @@
     <div class="outlet-block">
       <h1>COVID-19</h1>
       <h2>This screening form Is a risk assessment <br>Respiratory infections from the COVID-19 virus</h2>
-      <form action="index.php" medthod="GET">
+      <form action="index.php" medthod="post">
         <div class="inside-block">
           <?php
           if(isset($_SESSION['haveCough']) and isset($_SESSION['haveFever']))

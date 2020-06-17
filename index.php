@@ -13,7 +13,7 @@
     <div class="outlet-block">
       <h1>COVID-19</h1>
       <h2>This screening form Is a risk assessment <br>Respiratory infections from the COVID-19 virus</h2>
-      <form action="form_page_2.php" medthod="GET">
+      <form action="form_page_2.php" medthod="post">
         <div class="inside-block">
           <h2>First Name : <input type="text" name="firstName" <?php echo "value=\"".$_SESSION['firstName']."\""; ?> required></h2>
           <h2>Last Name : <input type="text" name="lastName" style="margin-left: 1%;" value="<?php echo $_SESSION['lastName']; ?>" required></h2>

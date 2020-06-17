@@ -13,7 +13,7 @@
     <div class="outlet-block">
       <h1>COVID-19</h1>
       <h2>This screening form Is a risk assessment <br>Respiratory infections from the COVID-19 virus</h2>
-      <form action="form_result.php" medthod="GET">
+      <form action="form_result.php" medthod="post">
         <div class="inside-block">
           <h2>Within these 14 days, has the following history?</h2>
           <h2><input type="radio" name="history" value="infection" <?php echo ($_SESSION['history'] == "infection")? "checked":""; ?> required> You have been in close contact with who confirmed that infected by Covid-19 virus</h2>
@@ -23,7 +23,12 @@
           <h2><input type="radio" name="history" value="no" <?php echo ($_SESSION['history'] == "no")? "checked":""; ?> required> No</h2>
         </div>
         <div class="button-block">
-          <h2><a href="form_page_2.php">Back</a><input type="submit" name="next" value="Submit"></h2>
+          <h2>
+            <div class="">
+              <a href="form_page_2.php">Back</a>
+            </div>
+            <input type="submit" name="next" value="Submit">
+          </h2>
         </div>
       </form>
     </div>
