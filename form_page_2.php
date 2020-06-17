@@ -24,7 +24,7 @@
         </div>
         <div class="button-block">
             <h2>
-              <button type="button" name="back"><a href="index.php">Back</a></button>
+              <a href="index.php">Back</a>
               <input type="submit" name="next" value="Next">
             </h2>
         </div>

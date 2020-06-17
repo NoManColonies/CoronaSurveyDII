@@ -16,10 +16,10 @@
       <form action="index.php" medthod="GET">
         <div class="inside-block">
           <?php
-          if(isset($_GET['haveCough']) and isset($_GET['haveFever']))
+          if(isset($_SESSION['haveCough']) and isset($_SESSION['haveFever']))
           {
-          $haveCough = $_GET['haveCough'];
-          $haveFever = $_GET['haveFever'];
+          $haveCough = $_SESSION['haveCough'];
+          $haveFever = $_SESSION['haveFever'];
             if($haveCough == "YES" and $haveFever == "YES")
             {
               echo "<h3>Now you have a bad cough and fever</h3>";
@@ -41,6 +41,8 @@
           {
             echo "<h2>ERROR_ANSWER_NOT_VALID</h2>";
           }
+          session_unset();
+          session_destroy();
           ?>
         </div>
         <div class="button-block">

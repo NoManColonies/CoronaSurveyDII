@@ -30,7 +30,8 @@ body{
     border-radius: 10%;
     padding: 0.25% 2% 0.25% 2%;
 }
-.button-block button{
+.button-block a{
+    display: block;
     margin-top: 2%;
     font-family: monospace;
     font-size: 75%;
