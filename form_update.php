@@ -1,4 +1,5 @@
 <?php
+session_start();
 if (!empty($_REQUEST['firstName'])) {
   $_SESSION['firstName'] = $_REQUEST['firstName'];
 }
