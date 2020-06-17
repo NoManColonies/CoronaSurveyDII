@@ -16,10 +16,10 @@
       <form action="index.php" medthod="GET">
         <div class="inside-block">
           <?php
-          if(isset($_SESSION['haveCough']) and isset($_SESSION['haveFever']))
+          if(isset($_GET['haveCough']) and isset($_GET['haveFever']))
           {
-          $haveCough = $_SESSION['haveCough'];
-          $haveFever = $_SESSION['haveFever'];
+          $haveCough = $_GET['haveCough'];
+          $haveFever = $_GET['haveFever'];
             if($haveCough == "YES" and $haveFever == "YES")
             {
               echo "<h3>Now you have a bad cough and fever</h3>";
